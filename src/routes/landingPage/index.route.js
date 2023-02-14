@@ -9,7 +9,7 @@ module.exports = function indexRoutes(app)
     try 
     {
         router.get('/', landingPageHandler.serveLandingPage )
-        app.use('/api/v1', router) 
+        app.use('/api/v1/landing', router) 
     }
     catch(e)
     {
